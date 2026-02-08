@@ -1,0 +1,502 @@
+/* ============================================================================
+   CUSTOM CSS FOR PORTFOLIO
+   ============================================================================ */
+
+/* Font Display */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    /* Using Google Fonts CDN */
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* ============================================================================
+   ANIMATION DEFINITIONS
+   ============================================================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ============================================================================
+   ANIMATION CLASSES
+   ============================================================================ */
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.8s ease-in-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-in-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-in-out;
+}
+
+.slide-in-up {
+    animation: slideInUp 0.8s ease-in-out;
+}
+
+.slide-in-down {
+    animation: slideInDown 0.8s ease-in-out;
+}
+
+/* ============================================================================
+   CUSTOM STYLING
+   ============================================================================ */
+
+/* Skill Tags */
+.skill-tag {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Colors */
+:root {
+    --color-primary: #3b82f6;
+    --color-primary-dark: #1e40af;
+    --color-secondary: #8b5cf6;
+    --color-secondary-dark: #6d28d9;
+    --color-accent: #10b981;
+    --color-text-light: #1f2937;
+    --color-text-dark: #f9fafb;
+    --color-bg-light: #ffffff;
+    --color-bg-dark: #111827;
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-track:dark {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e40af;
+}
+
+/* ============================================================================
+   NAVBAR STYLING
+   ============================================================================ */
+
+#navbar {
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* ============================================================================
+   BUTTON STYLING
+   ============================================================================ */
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============================================================================
+   FORM STYLING
+   ============================================================================ */
+
+input,
+textarea {
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+/* ============================================================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================================================ */
+
+/* Mobile First Responsive */
+@media (max-width: 640px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #home {
+        padding-top: 5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.875rem !important;
+    }
+
+    section {
+        padding: 2rem 1rem !important;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden.md\:flex {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ============================================================================
+   ANIMATION DELAYS FOR STAGGERED EFFECTS
+   ============================================================================ */
+
+.fade-in:nth-child(1),
+.slide-in-left:nth-child(1),
+.slide-in-right:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.fade-in:nth-child(2),
+.slide-in-left:nth-child(2),
+.slide-in-right:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(3),
+.slide-in-left:nth-child(3),
+.slide-in-right:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(4),
+.slide-in-left:nth-child(4),
+.slide-in-right:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* ============================================================================
+   SECTION BACKGROUNDS
+   ============================================================================ */
+
+section {
+    transition: background-color 0.3s ease;
+}
+
+/* ============================================================================
+   HOVER EFFECTS
+   ============================================================================ */
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+
+/* Project Card Hover Effect */
+.group {
+    overflow: hidden;
+}
+
+.group:hover img {
+    transform: scale(1.1);
+}
+
+/* ============================================================================
+   GRADIENT BACKGROUNDS
+   ============================================================================ */
+
+.bg-gradient-to-r {
+    background-size: 200% 200%;
+}
+
+/* ============================================================================
+   TYPOGRAPHY
+   ============================================================================ */
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -0.02em;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ============================================================================
+   SHADOW EFFECTS
+   ============================================================================ */
+
+.shadow-lg {
+    transition: box-shadow 0.3s ease;
+}
+
+.shadow-lg:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================================================
+   DARK MODE ADJUSTMENTS
+   ============================================================================ */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--color-bg-dark);
+        color: var(--color-text-dark);
+    }
+
+    input,
+    textarea {
+        background-color: #1f2937;
+        color: #fff;
+        border-color: #374151;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #9ca3af;
+    }
+}
+
+/* ============================================================================
+   CUSTOM SCROLLBAR FOR DARK MODE
+   ============================================================================ */
+
+html.dark ::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: #8b5cf6;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #a78bfa;
+}
+
+/* ============================================================================
+   TRANSITION UTILITIES
+   ============================================================================ */
+
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* Disable transitions on loading */
+.no-transition,
+.no-transition * {
+    transition: none !important;
+}
+
+/* ============================================================================
+   FOCUS STYLES FOR ACCESSIBILITY
+   ============================================================================ */
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* ============================================================================
+   LOADING ANIMATION
+   ============================================================================ */
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ============================================================================
+   INTERSECTION OBSERVER ANIMATION
+   ============================================================================ */
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-out;
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+
+@media print {
+    #navbar,
+    #contact {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+}
