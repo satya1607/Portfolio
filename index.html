@@ -107,26 +107,20 @@
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white dark:bg-gray-800">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center min-h-[40vh]">
             <h2 class="text-4xl md:text-5xl font-bold font-playfair text-gray-900 dark:text-white mb-12 text-center">
                 About <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Me</span>
             </h2>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="slide-in-left">
-                    <div class="w-full h-64 md:h-96 bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg shadow-lg"></div>
-                </div>
-                <div class="slide-in-right">
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-lg">
-                        As a Java / Fullstack Developer, I have hands-on experience building RESTful web services using Spring Boot and Spring Data JPA, and designing front-end interfaces with Angular. I focus on writing maintainable, testable code and delivering features iteratively in agile teams.
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-lg">
-                        Key strengths include core Java (multithreading, collections), API design, database integration (DB2, PostgreSQL, MongoDB), and deploying applications on Tomcat.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://github.com/satya1607" target="_blank" class="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">GitHub</a>
-                        <a href="https://linkedin.com/in/priyanka-velagala-a679a4392/" target="_blank" class="inline-block px-6 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition">LinkedIn</a>
-
-                    </div>
+            <div class="w-full md:w-2/3 lg:w-1/2 text-center slide-in-right">
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 text-lg">
+                    As a Java / Fullstack Developer, I have hands-on experience building RESTful web services using Spring Boot and Spring Data JPA, and designing front-end interfaces with Angular. I focus on writing maintainable, testable code and delivering features iteratively in agile teams.
+                </p>
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-lg">
+                    Key strengths include core Java (multithreading, collections), API design, database integration (DB2, PostgreSQL, MongoDB), and deploying applications on Tomcat.
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="https://github.com/satya1607" target="_blank" class="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">GitHub</a>
+                    <a href="https://linkedin.com/in/priyanka-velagala-a679a4392/" target="_blank" class="inline-block px-6 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-500 transition">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -197,7 +191,7 @@
                         <div class="absolute inset-0 group-hover:scale-110 transition-transform duration-300"></div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">SARATHI</h3>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">SARATHI PROJECT</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">Developed RESTful web services and backend features for the SARATHI project using Spring Boot and Spring Data JPA. Integrated with Angular and deployed in GitHub.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Java</span>
@@ -209,7 +203,7 @@
                         </div>
                         <div class="flex gap-2">
                             <a href="https://sarathi.parivahan.gov.in/sarathiservice/" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">Live</a>
-                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Details</a>
+                
                         </div>
                     </div>
                 </div>
@@ -227,10 +221,10 @@
                             <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">Spring Boot</span>
                             <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">MySQL</span>
                         </div>
-                        <div class="flex gap-2">
-                            <a href="#" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">Demo</a>
-                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Code</a>
-                        </div>
+                        <!-- <div class="flex gap-2">
+                            <a href="#" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">GitHub Link</a>
+                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Deployed Link</a>
+                        </div> -->
                     </div>
                 </div>
 
@@ -248,8 +242,8 @@
                             <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Thymeleaf</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="https://github.com/satya1607/eventmanagementsystem" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">Code</a>
-                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Details</a>
+                            <a href="https://github.com/satya1607/eventmanagementsystem" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">GitHub Link</a>
+                            <a href="https://eventmanagementsystem-ve8f.onrender.com/login" target="_blank" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Deployed Link</a>
                         </div>
                     </div>
                 </div>
@@ -268,8 +262,8 @@
                             <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm">Thymeleaf</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="https://github.com/satya1607/onlinequizapplication" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">Code</a>
-                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Details</a>
+                            <a href="https://github.com/satya1607/onlinequizapplication" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">GitHub Link</a>
+                            <a href="https://onlinequizapplication-2-70g9.onrender.com/login" target="_blank" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Deployed Link</a>
                         </div>
                     </div>
                 </div>
@@ -288,8 +282,8 @@
                             <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">MongoDB</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="https://github.com/satya1607/realestateproject" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">Code</a>
-                            <a href="#" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Details</a>
+                            <a href="https://github.com/satya1607/realestateproject" target="_blank" class="flex-1 px-4 py-2 bg-blue-600 text-white text-center rounded-lg hover:bg-blue-700 transition">GitHub Link</a>
+                            <a href="https://realestateproject-y9fm.onrender.com/login" class="flex-1 px-4 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 text-center rounded-lg hover:bg-blue-50 dark:hover:bg-gray-600 transition">Deployed Link</a>
                         </div>
                     </div>
                 </div>
